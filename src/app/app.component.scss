@@ -1,0 +1,64 @@
+.seatNumberInput{
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input{
+        height: 30px;
+    }
+
+    button{
+        width: 90px;
+        height: 35px;
+        margin-left: 10px;
+    }
+}
+.row-seat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .seat{
+        height: 40px;
+        width: 40px;
+        border: 1px solid #ccc;
+        
+    }
+}
+
+.available-seat{
+    background-color: green;
+}
+
+.unAvailable-seat{
+    background-color: red;
+}
+
+.wrap-tags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    .avail-seat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            height: 40px;
+            width: 40px;
+            border: 1px solid #ccc;
+            background-color: green;
+        }
+    }
+    
+    .unavail-seat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            height: 40px;
+            width: 40px;
+            border: 1px solid #ccc;
+            background-color: red;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<div class="seatNumberInput">
+  <input type="number" name="seats" #seats>
+  <button type="button" (click)="bookSeats(seats)">Book Seat</button>
+</div>
+<div class="wrap-tags">
+  <div class="avail-seat">    
+    <div></div><p>Available Seats</p>
+  </div>
+  <div class="unavail-seat">
+    <div></div><p>UnAvailable Seats</p>
+  </div>
+</div>
+<div>
+  <div *ngFor="let seats of totalSeats" class="row-seat">
+    <div *ngFor="let seat of seats" class="seat" [ngClass]="{'available-seat' :seat == 'available', 'unAvailable-seat': seat == 'unavailable'}">
+    </div>
+  </div>
+</div>
+
